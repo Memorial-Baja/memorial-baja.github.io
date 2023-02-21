@@ -37,12 +37,12 @@ export const Navbar = () => {
 				<div className={`${active ? 'flex items-center' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
 					<div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
 						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-							<a href="#about" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
+							<a href="/#about" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
 								About Us
 							</a>
 						</motion.div>
 						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-							<a href="#sponsors" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
+							<a href="/#sponsors" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
 								Sponsors
 							</a>
 						</motion.div>
