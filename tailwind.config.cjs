@@ -5,7 +5,11 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'orbitron': ['Orbitron']
-			}
+			},
+			screens: {
+				'3xl': '2560px',
+				// => @media (min-width: 640px) { ... }
+			},
 		},
 	},
 	plugins: [],

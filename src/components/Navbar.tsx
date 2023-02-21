@@ -9,9 +9,9 @@ export const Navbar = () => {
 	};
 	return (
 		<>
-			<nav className='absolute flex items-center top-0 z-50 flex-wrap bg-transparent px-3 sticky'>
+			<nav className='flex items-center top-0 z-50 flex-wrap bg-transparent px-3 sticky'>
 			<motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-				<a href="#" className='inline-flex items-center p-2 mr-4'>
+				<a href="/#" className='inline-flex items-center p-2 mr-4'>
 					<span className='text-2xl text-white font-code-font tracking-wide'>
 						<img width='120px' height ='60px' src={baja} />
 					</span>
