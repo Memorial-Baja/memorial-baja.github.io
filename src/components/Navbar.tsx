@@ -9,7 +9,7 @@ export const Navbar = () => {
 	};
 	return (
 		<>
-			<nav className='abosolute w-full flex items-center top-0 z-50 flex-wrap bg-transparent pt-3 px-3 sticky'>
+			<nav className='absolute w-full flex items-center top-0 z-50 flex-wrap bg-transparent pt-3 px-3 fixed'>
 				<motion.div className="relative" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
 					<a href="/#" className='inline-flex items-center p-2 mr-4'>
 						<span className='text-2xl text-white font-code-font tracking-wide'>

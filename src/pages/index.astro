@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import ContactForm from '../components/ContactForm.astro';
 import Footer from '../components/Footer.astro';
 
 import background_video from '../content/background_video.mp4';
+import logo from '../content/baja.png';
 import vehicle_1 from '../content/vehicle_1.jpg';
 import puglisevich from '../content/sponsors/puglisevich.jpeg';
 import pegnl from '../content/sponsors/PEGNL.png';
@@ -15,7 +17,7 @@ import afonso from '../content/sponsors/afonso.jpeg';
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
 	<main>
-		<div class="object-cover w-full max-w-full sm:min-h-[60rem] min-h-[50rem] xl:max-h-[60rem] top-0 flex justify-center items-center">
+		<div class="object-cover w-full max-w-full min-h-[60rem] xl:max-h-[60rem] top-0 flex justify-center items-center">
 			<div class="font-orbitron text-white text-7xl text-right z-10 ">Memorial<br>Baja</div>
 			<!-- <div class="flex flex-wrap justify-center">
 				<img class="z-10 h-20" src={logo} />
@@ -26,7 +28,7 @@ import afonso from '../content/sponsors/afonso.jpeg';
    				loop
     			muted
 				playsinline
-    			class="object-cover absolute brightness-50 w-full sm:min-h-[65rem] min-h-[55rem] xl:max-h-[50rem] max-w-full top-0"
+    			class="object-cover absolute brightness-50 w-full min-h-[65rem] xl:max-h-[50rem] max-w-full top-0"
   			>
 				<source
       				src={background_video}
