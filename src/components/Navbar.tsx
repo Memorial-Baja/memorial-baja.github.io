@@ -9,15 +9,15 @@ export const Navbar = () => {
 	};
 	return (
 		<>
-			<nav className='flex items-center top-0 z-50 flex-wrap bg-transparent p-3 sticky'>
-			<motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-				<a href="/#" className='inline-flex items-center p-2 mr-4'>
-					<span className='text-2xl text-white font-code-font tracking-wide'>
-						<img width='120px' height ='60px' src={baja} />
-					</span>
-				</a>
+			<nav className='abosolute w-full flex items-center top-0 z-50 flex-wrap bg-transparent pt-3 px-3 sticky'>
+				<motion.div className="relative" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+					<a href="/#" className='inline-flex items-center p-2 mr-4'>
+						<span className='text-2xl text-white font-code-font tracking-wide'>
+							<img width='120px' height ='60px' src={baja} />
+						</span>
+					</a>
 				</motion.div>
-				<motion.div className="ml-auto" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+				<motion.div className="relative ml-auto" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
 					<button
 						className=' inline-flex p-3 hover:bg-gray-900 rounded lg:hidden text-white outline-none'
 						onClick={handleClick}
@@ -34,7 +34,7 @@ export const Navbar = () => {
 					</button>
 				</motion.div>
 				{/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-				<div className={`${active ? 'flex items-center' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+				<div className={`relative ${active ? 'flex items-center' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
 					<div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
 						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
 							<a href="/#about" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
