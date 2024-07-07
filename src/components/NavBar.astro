@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../content/DET_Logo.png';
+---
+
+<>
+	<div class="sticky z-10 top-0 max-w-screen flex items-center h-16 bg-slate-700 bg-opacity-60 text-white backdrop-blur-sm">
+		<div class="absolute left-0 flex xl:pl-[25%] lg:pl-[15%] font-quicksand text-2xl">
+			<Image height={64} src={logo} alt='logo'/>
+		</div>
+		<ul class="absolute right-0 xl:pr-[25%] lg:pr-[15%] flex space-x-4 text-xl pr-5 font-Quicksand">
+			<li class="hover:bg-gray-800 rounded-lg px-3 py-1"><a href="https://liam-earle.github.io/resume/">About Us</a></li>
+			<li class="hover:bg-gray-800 rounded-lg px-3 py-1"><a href="mailto:laearle@mun.ca">Sponsors</a></li>
+			<li class="hover:bg-gray-800 rounded-lg px-3 py-1"><a href="mailto:laearle@mun.ca">Contact</a></li>
+			<li class="hover:bg-gray-800 rounded-lg px-3 py-1"><a href="mailto:laearle@mun.ca">Documentation</a></li>
+		</ul>
+	</div>
+</>

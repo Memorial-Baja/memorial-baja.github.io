@@ -1,0 +1,139 @@
+---
+import Layout from '../layout/Layout.astro';
+import { Image } from 'astro:assets';
+import Button from '../components/Button.astro';
+
+import logo from '../content/baja_logo.png';
+import background_video from '../content/background_video.mp4';
+
+import puglisevich from '../content/sponsors/puglisevich.png';
+import pegnl from '../content/sponsors/PEGNL.png';
+import afonso from '../content/sponsors/afonso.jpeg';
+import stjohns from '../content/sponsors/stjohns.jpeg';
+import ieee from '../content/sponsors/ieee.png';
+import colab from '../content/sponsors/colab.png';
+import maderra from '../content/sponsors/maderra.png';
+import fortis from '../content/sponsors/fortis.png';
+import govnl from '../content/sponsors/govnl.png';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/baja_logo.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Memorial Baja</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Economica&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+	</head>
+	<body>
+		<Layout>
+			<div class="flex items-center justify-center max-w-screen h-[40rem] bg-gray-600 overflow-hidden">
+				<Image class="z-10" height={512} src={logo} alt="logo" />
+				<video
+    			autoplay
+   				loop
+    			muted
+				playsinline
+				onloadstart="this.playbackRate = 0.75;"
+    			class="object-cover absolute brightness-50 w-full min-h-[40rem] xl:max-h-[30rem] max-w-full top-0 left-0"
+  			>
+				<source
+      				src={background_video}
+      				type="video/mp4"
+    			/>
+			</video>
+			</div>
+			<div id="overview" class="flex justify-center bg-zinc-700 max-w-screen">
+				<div class="flex flex-col items-center py-10">
+					<div class="text-2xl text-white font-bold">The Competition</div>
+					<hr class="w-16 h-1 my-4 border-0 bg-gray-500">
+					<!-- <div class="overflow-hidden">
+						<model-viewer class="h-96 lg:w-[40rem] w-[25rem] max-w-screen" src="./RDE_MASTER_ASSEMBLY_09-26-23.glb" ar ar-placement="wall" camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>
+					</div> -->
+					<div class="pt-4 lg:px-[30%] px-10 text-gray-300">
+						<div>
+							The Society of Automotive Engineers hosts three Baja competitions in different regions of North America, each of which draws out teams from over 100 universities. The competitions are designed to simulate a real-world engineering project of designing an off-road vehicle capable of handling all types of rough terrain. The competition is broken up into two components: static events and dynamic events. The static events consist of a thorough safety inspection followed by a vehicle design presentation for the judges. The dynamic events consist of short performance events and an endurance race.
+						</div>
+					</div>
+					<Button link="https://www.sae.org/attend/student-events" text="Read More"/>
+				</div>
+			</div>
+			<div id="team" class="flex justify-center bg-baja-red max-w-screen">
+				<div class="flex flex-col items-center py-10">
+					<div class="text-2xl text-white font-bold">The Team</div>
+					<hr class="w-16 h-1 my-4 border-0 bg-gray-500">
+					<div class="pt-4 lg:px-[30%] px-10 text-gray-300">
+						<div>
+							Memorial Baja is a student team working together to meet the various demands encountered in building an off-road racing vehicle. From marketing to advanced engineering design, students are challenged and ultimately brought together in a positive learning experience. A Baja SAE vehicle is a single-seat off-road racer. They typically weigh under 500 pounds and are capable of speeds up to 50 km/h. Competing teams are supplied with the engine and are required to design and build the vehicle from the ground up following sound engineering practices.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sponsors" class="flex justify-center bg-zinc-700 max-w-screen">
+				<div class="flex flex-col items-center py-10 px-10">
+					<div class="text-2xl text-white font-bold">Partners</div>
+					<hr class="w-16 h-1 my-4 border-0 bg-gray-500">
+					<div class="mb-3 font-normal text-gray-300">
+						Sponsors are a crucial part of our team. They allow us to both fund the design and fabrication of our vehicle and allow us to enter and travel to our competitions! For that, we'd like to thank our sponsors below!
+					</div>
+					<a href="https://drive.google.com/file/d/1HCRrHg67II2oJA97SNaRoiS3DNWkNo-Q/view?usp=sharing"><button type="button" class="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800">Sponsorship Presentation</button></a>
+					<div class="flex flex-col items-center">
+						<div class="pt-10 text-6xl  font-bold tracking-tight text-white">Title Sponsor</div>
+					</div>
+					<div class="flex flex-col items-center">
+						<div class="pt-10 text-5xl  font-bold tracking-tight text-white">E85</div>
+						<div class="flex row-auto items-center space-x-10">
+							<a href="https://puglisevich.com/">
+								<img src={puglisevich.src}>
+							</a>
+							<a class="font-bold text-2xl tracking-tight text-white" href="https://www.mun.ca/engineering/undergraduate/community-service-and-volunteering/angus-bruneau-student-life-program/">
+								Angus Bruneau Student LIFE Program
+							</a>
+							<a href="https://www.gov.nl.ca/">
+								<img class="max-h-20" src={govnl.src}>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col items-center">
+						<div class="pt-10 text-4xl  font-bold tracking-tight text-white">94 Octane</div>
+					</div>
+					<div class="flex flex-col items-center">
+						<div class="pt-10 text-3xl font-bold tracking-tight text-white">90 Octane</div>
+						<div class="flex flex-row items-center space-x-10">
+							<a href="https://pegnl.ca/">
+								<img class="max-h-20"src={pegnl.src}>
+							</a>
+							<a href="https://www.stjohns.ca/">
+								<img class="max-h-10"src={stjohns.src}>
+							</a>
+							<a href="https://www.ieee.org/">
+								<img class="max-h-10" src={ieee.src}>
+							</a>
+							<a href="https://www.fortisinc.com/">
+								<img class="max-h-10" src={fortis.src}>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col items-center">
+						<div class="pt-10 text-2xl font-bold tracking-tight text-white">87 Octane</div>
+						<div class="flex flex-row items-center space-x-5">
+							<a href="https://afonsogroup.com/">
+								<img class="max-h-10"src={afonso.src}>
+							</a>
+							<a href="https://colabsoftware.com">
+								<img class="max-h-10" src={colab.src}>
+							</a>
+							<a href="https://www.maderra.ca">
+								<img class="max-h-10" src={maderra.src}>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Layout>
+	</body>
+</html>

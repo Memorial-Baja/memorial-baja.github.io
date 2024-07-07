@@ -1,0 +1,14 @@
+---
+const {date, title} = Astro.props;
+---
+<li class="md:px-10">
+	<div class="flex-start flex items-center pt-2 md:block md:pt-0">
+		<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500 md:-mt-[5px] md:ml-0 md:mr-0"></div>
+		<p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300">
+			{date}
+		</p>
+	</div>
+	<div class="ml-4 mt-2 pb-5 md:ml-0">
+		<h4 class="mb-1.5 text-white text-xl font-semibold">{title}</h4>
+	</div>
+</li>

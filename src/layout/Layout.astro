@@ -1,0 +1,9 @@
+---
+import { Navbar } from '../components/NavBar.jsx';
+import Footer from '../components/Footer.astro';
+---
+<div class="bg-zinc-500 max-w-screen">
+	<Navbar client:load />
+	<slot />
+	<Footer />
+</div>
