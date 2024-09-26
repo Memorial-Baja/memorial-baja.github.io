@@ -45,7 +45,7 @@ export const Navbar = () => {
 							<path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a className="text-sm text-gray-300 hover:text-gray-500" href="mailto:DETechnologies@mun.ca">Contact</a></li>
+					<li><a className="text-sm text-gray-300 hover:text-gray-500" href="mailto:memorialbaja@gmail.com">Contact</a></li>
 				</ul>
 				<div className="flex space-x-2 left-0">
 							<motion.div className=""whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
@@ -80,7 +80,7 @@ export const Navbar = () => {
 					<a href="/documentation" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-Quicksand items-center justify-center hover:text-gray-400 `}>
 						Documentation
 					</a>
-					<a href="mailto:DETechnologies@mun.ca" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-Quicksand items-center justify-center hover:text-gray-400 `}>
+					<a href="mailto:memorialbaja@gmail.com" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-Quicksand items-center justify-center hover:text-gray-400 `}>
 						Contact
 					</a>
 				</div>
